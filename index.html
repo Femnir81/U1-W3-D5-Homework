@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Calculator</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/aeb383bec6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Xiaomi Calculator</h1>
+    <div class="container">
+      <div class="backspace operator">
+        <button onclick="backspace()">
+          <i class="fas fa-backspace"></i>
+        </button>
+      </div>
+      <div class="partond1 operator">
+        <button onclick="addToDisplay('&#40;')">&#40;</button>
+      </div>
+      <div class="partond2 operator">
+        <button onclick="addToDisplay('&#41;')">&#41;</button>
+      </div>
+      <div id="display" class="show operator"></div>
+      <div class="AC operator">
+        <button onclick="deleteDisplay()">AC</button>
+      </div>
+      <div class="divisione operator">
+        <button onclick="addToDisplay('/')">/</button>
+      </div>
+      <div class="sette number">
+        <button onclick="addToDisplay('7')">7</button>
+      </div>
+      <div class="otto number">
+        <button onclick="addToDisplay('8')">8</button>
+      </div>
+      <div class="nove number">
+        <button onclick="addToDisplay('9')">9</button>
+      </div>
+      <div class="per operator">
+        <button onclick="addToDisplay('*')">*</button>
+      </div>
+      <div class="quattro number">
+        <button onclick="addToDisplay('4')">4</button>
+      </div>
+      <div class="cinque number">
+        <button onclick="addToDisplay('5')">5</button>
+      </div>
+      <div class="sei number">
+        <button onclick="addToDisplay('6')">6</button>
+      </div>
+      <div class="meno operator">
+        <button onclick="addToDisplay('-')">-</button>
+      </div>
+      <div class="uno number">
+        <button onclick="addToDisplay('1')">1</button>
+      </div>
+      <div class="due number">
+        <button onclick="addToDisplay('2')">2</button>
+      </div>
+      <div class="tre number">
+        <button onclick="addToDisplay('3')">3</button>
+      </div>
+      <div class="zero number">
+        <button onclick="addToDisplay('0')">0</button>
+      </div>
+      <div class="piu operator">
+        <button onclick="addToDisplay('+')">+</button>
+      </div>
+      <div class="uguale operator">
+        <button onclick="displayResult()">=</button>
+      </div>
+      <div class="punto number">
+        <button onclick="addToDisplay('.')">.</button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

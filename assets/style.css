@@ -1,0 +1,123 @@
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: orangered;
+    margin: 3rem auto;
+    font-size: 2.5rem;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "show show show show"
+      "AC partond1 partond2 divisione"
+      "sette otto nove per"
+      "quattro cinque sei meno"
+      "uno due tre piu"
+      "backspace zero punto uguale";
+    width: 270px;
+    height: 420px;
+    margin: 6rem auto;
+    text-align: center;
+    background-color: black;
+  }
+  
+  .backspace { grid-area: backspace; }
+  
+  .partond1 { grid-area: partond1; }
+  
+  .partond2 { grid-area: partond2; }
+  
+  .show { grid-area: show; }
+  
+  .AC { grid-area: AC; }
+  
+  .divisione { grid-area: divisione; }
+  
+  .sette { grid-area: sette; }
+  
+  .otto { grid-area: otto; }
+  
+  .nove { grid-area: nove; }
+  
+  .per { grid-area: per; }
+  
+  .quattro { grid-area: quattro; }
+  
+  .cinque { grid-area: cinque; }
+  
+  .sei { grid-area: sei; }
+  
+  .meno { grid-area: meno; }
+  
+  .uno { grid-area: uno; }
+  
+  .due { grid-area: due; }
+  
+  .tre { grid-area: tre; }
+  
+  .zero { grid-area: zero; }
+  
+  .piu { grid-area: piu; }
+  
+  .uguale { grid-area: uguale; }
+  
+  .punto { grid-area: punto; }
+
+  .operator button {
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: orangered;
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .number button {
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+  }
+
+    button:hover {
+        background-color: darkgray;
+    }
+
+  .operator .fas {
+    margin-top: 5px;
+    margin-right: 3px;
+  }
+
+  .operator, .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #display {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    padding-right: 0.8rem;
+  }
+  
